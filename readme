@@ -1,0 +1,11 @@
+
+2021.5.4 写下
+    从RPC11开始，将根据 https://blog.csdn.net/qq_40856284/category_10138756.html 实现自己的RPC框架。
+    设想中的RPC框架有：
+        传输方式Netty
+        序列化/反序列化框架 Kryo 或 Hessian 或其他（最好多实现几种）
+        注册中心Naco
+        自定义传输协议
+        负载均衡算法
+
+
