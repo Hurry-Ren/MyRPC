@@ -1,0 +1,16 @@
+package RPC01;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
+public class HelloServiceImp implements HelloService{
+
+    private static final Logger logger = LoggerFactory.getLogger(HelloServiceImp.class);
+
+    @Override
+    public String Hello(HelloObject object) {
+        logger.info("接收到：{}", object.getMessage());
+        return "这是调用的返回值，id=" + object.getId();
+    }
+}

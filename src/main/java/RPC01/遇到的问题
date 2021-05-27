@@ -1,0 +1,19 @@
+
+1. java: You aren't using a compiler supported by lombok, so lombok will not work and has been disabled.
+     Your processor is: com.sun.proxy.$Proxy29
+     Lombok supports: sun/apple javac 1.6, ECJ
+   和
+   java: 找不到符号
+      符号:   方法 builder()
+      位置: 类 RPC01.RPCRequest
+   这两个都是在使用lombok时出现的错误，解决办法：
+        在pom.xml文件中将lombok从1.18.4 --> 1.18.14.
+
+2. 升级到了IntelliJ IDEA 2021.1 (Edu) Build #IE-211.7142.37, built on April 28, 2021
+    Lombok用不了了（没有合适2021.1的Lombok），Builder要自己手动写！
+    别升级！！！！！！！！！！！
+
+
+
+
+
