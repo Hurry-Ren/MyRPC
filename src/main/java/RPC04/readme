@@ -1,0 +1,19 @@
+
+
+本节主要做的事：
+    1. 之前Socket都是并未引入传输协议，只是单纯的传输一个RPCRequest对象到服务端，
+       直接使用Java原生的readObject、writeObject就可以完成传输，不需要单独的序列化器。
+       本节将让Socket与Netty使用的传输协议保持一致。
+
+    2. 使用Protostuff序列化
+
+    3. 实现Netty客户端连接失败重试机制
+
+
+
+
+
+
+遇到的问题
+
+
